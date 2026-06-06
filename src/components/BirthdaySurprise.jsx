@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import image from "../assets/WhatsApp Video 2026-06-07 at 09.01.36.mp4";
 export default function BirthdaySurprise() {
   const [stage, setStage] = useState(0);
   const [isSlashed, setIsSlashed] = useState(false);
@@ -81,7 +81,7 @@ export default function BirthdaySurprise() {
           <div className="w-full aspect-video rounded-[25px] overflow-hidden shadow-2xl border-8 border-white bg-black">
             <iframe
               className="w-full h-full border-none"
-              src="https://www.youtube.com/embed/z0A3-E3IDLY?autoplay=1"
+              src={image}
               allowFullScreen
               title="Birthday Video"
             />
